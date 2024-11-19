@@ -4,7 +4,10 @@ const nol = document.querySelector('.nom')
 const form = document.querySelector('.form-group')
 
 function checar() {
-
+ if (nome.value.length <= 8) {
+      return  form.classList.add('estilo')
+      
+    }
      if (!nome.value) {
         return alert('Erro Nome Está Vazio')
 
@@ -13,11 +16,7 @@ function checar() {
         return alert(`Erro Email Está Vazio`)
 
     }
- if (nome.value.length <= 8) {
-        form.classList.add('estilo')
-        alert('Nome incompleto')
 
-    }
 
 
     else {
