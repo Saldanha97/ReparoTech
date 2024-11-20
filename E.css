@@ -566,85 +566,92 @@ table th {
 
   /* texto inicial */
   .intro-text-content h2 {
-    font-size: 2.5rem; /* Ajustando o tamanho do título */
+    font-size: 4rem;
   }
 
-  /* parágrafo inicial */
+  /* paragrafo inicial */
   .intro-text-content p {
-    font-size: 1.4rem; /* Tamanho do texto maior para leitura confortável */
+    font-size: 1.8rem;
   }
 
-  /* imagem PC */
+  /* imagem pc */
   .intro-img img {
-    max-width: 100%; /* Ajustando a largura da imagem */
-    /* margin-left: 2rem; Margem mais suave */
+    max-width: 75%;
+    margin-left: 10rem;
   }
 
-  /* texto */
+  /* texto  */
   .top-3 h2 {
-    font-size: 3.5rem; /* Tamanho do título */
+    font-size: 6rem;
+
   }
 
-  /* texto li nossos serviços */
+  /* texto li nossos servicos*/
   .top-3 li {
-    font-size: 1.4rem; /* Aumentando o tamanho da lista */
+    font-size: 1.8rem;
   }
 
-  /* texto parágrafo top3 */
+  /* texto paragrafo top3 */
   .grid p {
-    font-size: 1.4rem; /* Ajustando o texto */
+    font-size: 1.9rem;
+
+        
   }
 
-  /* h2 top 3 */
+  /* h2 top 3  */
   .grid-main-con {
-    font-size: 3.5rem; /* Ajustando tamanho do título */
+    font-size: 3.9rem;
+    padding-top: 5rem;
+    
+  }
+  /* empresa */
+  .grid-descr{
+    font-size: 1.8rem;
   }
 
-  /* Empresa */
-  .grid-descr {
-    font-size: 1.4rem; /* Melhor legibilidade para descrição */
-  }
-
-  /* número 1 2 3 das grid */
+  /* numero 1 2 3 das grid */
   .grid h3::before {
-    font-size: 3.5rem; /* Aumentando o número */
+    font-size: 3rem;
     counter-increment: grid;
     content: counter(grid);
     position: absolute;
     font-style: italic;
     top: -1rem;
     left: 1rem;
-    transform: rotate(6deg);
+    transform: rotate(6deg)
   }
 
-  /* Ajuste no zoom das grids */
-  .grid article {
-    zoom: 90%;
+  .grid article{
+   zoom: 80%;
   }
+  
+  
 
-  /* imagem dos serviços */
+
+  /* imagem dos servico */
   .grid img {
-    max-height: 4rem; /* Ajustando tamanho das imagens de serviço */
+    max-height: 5.2rem;
   }
 
-  /* tabela de preço */
+  /* tabela de preco */
   h2 {
-    font-size: 4.5rem; /* Ajustando título da tabela */
+    font-size: 4rem;
   }
 
-  /* Contato */
+  /* contato  */
   div .heit {
     padding-top: 1rem;
-    font-size: 4.5rem;
+    font-size: 4rem;
+
   }
 
-  /* Layout das colunas de conteúdo */
+
+
   .intro-content,
   .grid {
-    grid-template-columns: 1fr 1fr; /* Mudando para 2 colunas */
+    grid-template-columns: 1fr;
   }
 
-  /* Menu */
   .menu {
     bottom: 0;
     text-align: center;
@@ -658,6 +665,7 @@ table th {
 
   .menu-content {
     height: 100vh;
+
   }
 
   .menu {
@@ -672,16 +680,16 @@ table th {
   }
 
   .close-menu-label::after {
-    content: '☰'; /* Ícone de menu */
+    content: '☰';
     position: fixed;
     z-index: 2;
     top: 2rem;
     right: 1rem;
     background: var(--color);
     color: var(--branco);
-    font-size: 3.5rem;
-    line-height: 3.5rem;
-    height: 3.5rem;
+    font-size: 3rem;
+    line-height: 3rem;
+    height: 3rem;
     text-align: center;
     padding: 0.5rem;
     cursor: pointer;
@@ -700,12 +708,13 @@ table th {
   }
 
   .img {
-    display: none;
+    /* display: none; */
   }
 
   .intro-text-content {
-    font-size: 4.5rem; /* Aumentando o tamanho do texto */
+    font-size: 4rem;
   }
+ 
 
 }
 
@@ -817,3 +826,5 @@ table th {
     font-size: 1.2rem;
   }
 }
+
+
