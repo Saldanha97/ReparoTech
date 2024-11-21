@@ -254,14 +254,14 @@ h2 .grid-main-con {
 
 .responsive-table {
   overflow-y: auto;
-  box-shadow: 5px 5px 20px; 
-  border-radius: 2%;
+box-shadow: 5px 5px 20px; 
+border-radius: 2%;
 
 }
 
 th,
 td {
-  padding: 1rem;
+  padding: 2rem;
   border: 0.1rem solid var(--logo);
   text-align: left;
   font-size: 1.4rem;
