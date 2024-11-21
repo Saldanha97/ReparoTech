@@ -1,43 +1,52 @@
 const nome = document.querySelector('#primeiro')
 const email = document.querySelector('#email')
 const nol = document.querySelector('.nom')
-const form = document.querySelector('.form-group')
+const old = document.querySelector('.old')
+const old1 = document.querySelector('.old1')
+let elementoCriado = false;
+let elementoEmailCriado = false;
+const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function checar() {
- if (nome.value.length <= 8) {
-      return  form.classList.add('estilo')
-      
-    }
-     if (!nome.value) {
-        return alert('Erro Nome Está Vazio')
-
-    }
-    if (!email.value) {
-        return alert(`Erro Email Está Vazio`)
-
+    if (!nome.value || nome.value.length <= 8) {
+        if (!elementoCriado) {
+            elementonome();
+            
+            elementoCriado = true;
+          
+        }
+     
     }
 
-
+    if (!email.value || !regexEmail.test(email.value)) {
+        if (!elementoEmailCriado) {
+            elementoemail();
+            elementoEmailCriado = true;
+            
+        }
+    }
 
     else {
         abrir()
-        form.classList.remove('estilo')
+        
     }
 }
 
-document.addEventListener('click', function (e) {
-    const el = e.target
-    if (el.classList.contains('checar')) {
-        checar()
-
-
-    }
 
 
 
-})
 
+function elementonome() {
+    const cria = document.createElement('p')
+    old.appendChild(cria)
+    return cria.innerHTML = 'Insira um nome válido'
+}
 
+function elementoemail() {
+    const cri = document.createElement('p')
+    old1.appendChild(cri)
+    return cri.innerHTML = 'Insira email válido  '
+}
 
 
 
@@ -47,3 +56,17 @@ function abrir() {
 }
 
 
+
+
+document.addEventListener('click', function (e) {
+    const el = e.target
+    if (el.classList.contains('checar')) {
+        checar()
+
+
+
+    }
+
+
+
+})
