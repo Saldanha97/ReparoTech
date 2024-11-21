@@ -1,39 +1,37 @@
-.img2 {
-    margin: auto;
-    margin-left: 35rem;
-    margin-top: 10rem;
-    z-index: 1;
-    width: 30%;
-  
- 
-
+/* Estilo para o body para centralizar o conteúdo */
+body {
+    display: grid;
+    place-items: center; /* Alinha o conteúdo (h2) no centro */
+    height: 100vh;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(imagem/parabolic-rectangle.svg);
 }
+
+/* Estilo para o h2 */
 h2 {
-    position: absolute;
-    margin-left: 28rem;
-    margin-top: 34rem;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-
-   
-
-
+    animation: corAnimada 5s infinite;
 }
 
-.img1 {
-    margin-left: 25rem;
-    margin-top: 10rem;
-    border-radius: 10%;
-    position: fixed;
-    z-index: -1;
-    width: 50%;
-    box-shadow: 30px 20px 90px;
-}
-
-body{
-    background-color:rgba(24, 47, 150, 0.592);
-}
-
-#nome{
-    background-color: red;
+/* Animação de cores */
+@keyframes corAnimada {
+    10% {
+        color: red;
+    }
+    25% {
+        color: orange;
+    }
+    50% {
+        color: yellow;
+    }
+    75% {
+        color: green;
+    }
+    100% {
+        color: blue;
+    }
 }
