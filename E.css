@@ -402,10 +402,16 @@ table th {
 
 }
 
-.estilo input {
-  border: 2px solid red;
+.old  p{
+ color: red;
 
 }
+
+.old1  p{
+  color:   red;
+ 
+ }
+
 
 
 @media (min-width: 310px) and (max-width:640px) {
