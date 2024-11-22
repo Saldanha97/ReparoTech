@@ -9,29 +9,18 @@ body {
     background-position: center center;
     background-image: url(imagem/parabolic-rectangle.svg);
 }
-
+ font-size: 40px;
 /* Estilo para o h2 */
 h2 {
-    font-size: 40px;
-    font-family: Arial, Helvetica, sans-serif;
-    animation: corAnimada 5s infinite;
+    font-size: 3.2rem;
+   background: linear-gradient(to left,red,orange,yellow,indigo,green,blue);
+   background-clip: text;
+   display: inline;
+   color: transparent;
+   animation: animated 5s linear infinite;
 }
 
-/* Animação de cores */
-@keyframes corAnimada {
-    10% {
-        color: red;
-    }
-    25% {
-        color: orange;
-    }
-    50% {
-        color: yellow;
-    }
-    75% {
-        color: green;
-    }
-    100% {
-        color: blue;
-    }
+
+@keyframes animated{
+    to {background-position-x:500px ;}
 }
