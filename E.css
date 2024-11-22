@@ -404,11 +404,13 @@ table th {
 
 .old  p{
  color: red;
+  outline-color: red;
 
 }
 
 .old1  p{
   color:   red;
+  outline-color: red;
  
  }
 
