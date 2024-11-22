@@ -11,7 +11,7 @@ function checar() {
     if (!nome.value || nome.value.length <= 8) {
         if (!elementoCriado) {
             elementonome();
-            
+            nome.classList.add('false')
             elementoCriado = true;
           
         }
@@ -21,6 +21,7 @@ function checar() {
     if (!email.value || !regexEmail.test(email.value)) {
         if (!elementoEmailCriado) {
             elementoemail();
+            email.classList.add('false')
             elementoEmailCriado = true;
             
         }
