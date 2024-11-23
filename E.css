@@ -371,21 +371,20 @@ table th {
 .footer {
   width: 100%;
   background-color: #f0f0f0;
-  padding: 0.5rem;
-  text-align: center;
 
 }
+
 
 
 .footer p {
-  padding-top: 2rem;
-
+  padding-top: 1rem;
+  color: var(--color);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
 
 }
 
-
-.footer a {
-  color: var(--color);
 
 }
 
@@ -590,36 +589,38 @@ table th {
 
   /* imagem pc */
   .intro-img img {
-    max-width: 75%;
-    margin-left: 10rem;
+    max-width: 35%;
+    margin: auto;
+
   }
 
   /* texto  */
   .top-3 h2 {
-    font-size: 6rem;
+    font-size: 4rem;
 
   }
 
   /* texto li nossos servicos*/
   .top-3 li {
-    font-size: 1.8rem;
+    font-size: 1.3rem;
   }
 
   /* texto paragrafo top3 */
   .grid p {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
 
-        
+
   }
 
   /* h2 top 3  */
   .grid-main-con {
-    font-size: 3.9rem;
-    padding-top: 5rem;
-    
+    font-size: 3.4rem;
+    padding-top: 3rem;
+
   }
+
   /* empresa */
-  .grid-descr{
+  .grid-descr {
     font-size: 1.8rem;
   }
 
@@ -635,11 +636,11 @@ table th {
     transform: rotate(6deg)
   }
 
-  .grid article{
-   zoom: 80%;
+  .grid article {
+    zoom: 80%;
   }
-  
-  
+
+
 
 
   /* imagem dos servico */
@@ -722,16 +723,15 @@ table th {
   }
 
   .img {
-    /* display: none; */
+    display: none;
   }
 
   .intro-text-content {
     font-size: 4rem;
   }
- 
+
 
 }
-
 
 @media (min-width: 1024px) {
   .intro-text-content h2 {
